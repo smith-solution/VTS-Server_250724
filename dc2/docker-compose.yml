@@ -19,3 +19,20 @@ services:
     build: ./ros2api
     ports:
       - "8000:8000"
+
+  yolo_processor:
+    build: ./yolo_processor
+    container_name: yolo_processor
+    runtime: nvidia  # ✅ GPU 사용을 위한 핵심 옵션
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    ports:
+      - "8080:8080"

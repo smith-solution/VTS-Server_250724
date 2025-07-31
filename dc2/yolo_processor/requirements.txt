@@ -1,0 +1,5 @@
+ultralytics
+flask
+flask-cors
+opencv-python-headless
+numpy==1.24.4
