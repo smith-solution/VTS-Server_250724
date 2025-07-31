@@ -11,7 +11,7 @@ docker compose up --build
 
 
 
-필수)기본적으로 nvida 드라이버, cuda tookit(docker 사용x시), anaconda 설치 필요
+필수)기본적으로 nvida 드라이버, cuda tookit(docker 사용시 제외), anaconda 설치 필요
 
 
 참고 사이트 : <https://kenkyuanime.com/vscode로gpu사용/>
