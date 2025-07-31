@@ -1,7 +1,7 @@
 # VTS-Server_250724
 
 ```
-docker compose --build
+docker compose up --build
 ```
 
 
